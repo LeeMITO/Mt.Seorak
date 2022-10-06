@@ -8,14 +8,21 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/seoraksan.css">
     <title>Seorak national park</title>
-
+    <script>
+        function video_start() {
+            document.getElementById("prvideo").play();
+        }
+        function video_stop() {
+            document.getElementById("prvideo").pause();
+        }
+    </script>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <div class="mediabox">
-                <video autoplay muted poster="images/헤더이미지(영상일부).png">
+                <video id="videoplay" muted poster="images/헤더이미지(영상일부).png">
                     <source src="https://tv.knps.or.kr/media/90/M20170207163733.mp4" type="video/mp4">
                     <p>이 브라우저는 HTML5 비디오를 지원하지 않습니다.</p>
                 </video>
@@ -69,8 +76,8 @@
                     <div class="text-button">
                         <p><img src="./images/설악산 아이콘.png">설악산국립공원</p>
                         <div class="video-button">
-                            <input type="image" src="./images/헤더영상정지아이콘.png" />
-                            <input type="image" src="./images/헤더영상재생아이콘.png" />
+                            <input type="image" onclick="video_stop()" src="./images/헤더영상정지아이콘.png" />
+                            <input type="image" onclick="video_start()" src="./images/헤더영상재생아이콘.png" />
                         </div>
                     </div> <!-- text-button -->
                     <div class="bottom-rightmenu">
@@ -155,12 +162,12 @@
                         </ul>
                     </div> <!-- reservation-menu -->
                 </div> <!-- container -->
-            </section>
+            </section> <!-- mt-climbing -->
 
             <section class="program-info">
-                <div class="back-img">
+               <!-- <div class="back-img">
                     <img src="./images/설악산배경이미지.png" alt="설악산">
-                </div>
+                </div>-->
                 <div class="container">
                     <h3>탐방 프로그램</h3>
                     <div class="pro-list">
@@ -220,37 +227,37 @@
                         </div>
                         <div class="infoBox">
                             <h3>사무소 알림판<h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <p>[설악산] 탐방통제정보 변경 알림 (9. 26. ~ 9. 30.)</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>[설악산] 국립공원 탐방로(남교리~대승령) 임시 출입통제 연...</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>[설악산] 탐방통제정보 변경 알림 (9. 20. 03:00 ~)</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>기상특보(호우주의보) 발효에 따른 탐방로 부분통제 안내(9...</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>[설악산]양폭대피소 생수 품절 안내</p>
-                                    </a>
-                                </li>
-                            </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <p>[설악산] 탐방통제정보 변경 알림 (9. 26. ~ 9. 30.)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>[설악산] 국립공원 탐방로(남교리~대승령) 임시 출입통제 연...</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>[설악산] 탐방통제정보 변경 알림 (9. 20. 03:00 ~)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>기상특보(호우주의보) 발효에 따른 탐방로 부분통제 안내(9...</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>[설악산]양폭대피소 생수 품절 안내</p>
+                                            </a>
+                                        </li>
+                                    </ul>
                         </div> <!-- infoBox -->
                     </div> <!-- display-info -->
                 </div> <!-- container -->
-            </section>
+            </section> <!-- program-info -->
 
             <section class="main-media">
                 <div class="backColor">
@@ -258,18 +265,66 @@
                 </div>
                 <div class="container">
                     <div class="photo">
-
-                    </div>
-                    <div class="cc-video">
-
-                    </div>
+                        <did class="photo1">
+                            <img src="./images/대청봉의 무지개.png" alt="대청봉의 무지개">
+                            <img src="./images/사진아이콘.png" alt="사진아이콘">
+                        </did>
+                        <did class="photo2">
+                            <img src="./images/공룡능선 운해.png" alt="공룡능선 운해">
+                            <img src="./images/사진아이콘.png" alt="사진아이콘">
+                        </did>
+                        <did class="photo3">
+                            <img src="./images/용소폭포.png" alt="용소폭포">
+                            <img src="./images/사진아이콘.png" alt="사진아이콘">
+                        </did>
+                    </div> <!-- photo -->
+                    <div class="video">
+                        <div class="videobox">
+                            <video id="prvideo" poster="./images/실시간영상 캡쳐이미지.png" width="780" height="390">
+                                <source src="https://tv.knps.or.kr/media/90/M20170207163733.mp4" type="video/mp4">
+                                <p>이 브라우저는 HTML5 비디오를 지원하지 않습니다.</p>
+                            </video>
+                            <input type="image" onclick="video_start()" src="./images/화면 재생.png" />
+                        </div>
+                        <div class="text-ctrl">
+                            <p>현재모습이 궁금하다면 <span class="cc-info">실시간영상Click</span></p>
+                            <div class="ctrlbox">
+                                <input type="image" onclick="video_start()" src="./images/재생아이콘.png" />
+                                <input type="image" onclick="video_stop()" src="./images/중지 아이콘.png" />
+                            </div>
+                        </div>
+                    </div><!-- video -->
                 </div> <!-- container -->
-            </section>
-
+            </section> <!-- main-media -->
         </main>
 
         <footer>
-
+            <div class="footerbox">
+                <div class="container">
+                    <div class="sns-logo-text">
+                        <div class="sns">
+                            <a href="#"><img src="./images/페이스북로고.png" alt="페이스북"></a>
+                            <a href="#"><img src="./images/인스타그램 로고.png" alt="인스타그램"></a>
+                            <a href="#"><img src="./images/네이버블로그 로고.png" alt="네이버블로그"></a>
+                            <a href="#"><img src="./images/카카오스토리 로고.png" alt="카카오스토리"></a>
+                            <a href="#"><img src="./images/유튜브 로고.png" alt="유튜브"></a>
+                        </div>
+                        <div class="footer-logo">
+                            <img src="./images/푸터로고.png" alt="국립공원로고">
+                        </div>
+                        <div class="address-copyright">
+                            <address>
+                                설악산국립공원 : 24903 강원도 속초시 설악산로 833번지 (설악동) 사업자등록번호 : 227-82-00746
+                                대표전화 : 033-801-0900  팩스번호 : 033-801-0969 
+                            </address>
+                            <p class="copyright">Copyright © Korea National Park Service. All Rights Reserved.</p>
+                        </div>
+                    </div> <!-- sns-logo-text -->
+                </div><!-- container -->
+            </div> <!-- footerbox -->
+            <div class="fixed-menu">
+                <a href="#">↑TOP</a>
+            </div>
         </footer>
     </div>
 </body>
