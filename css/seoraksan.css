@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* 그리드 시스템 */
+.container {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+    /* background-color: darkgray; */
+}
+
+.wrapper {
+    width: 100%;
+}
+
+/* ==================== header ==================== */
+header {
+    position: relative;
+    width: 100%;
+    height: 710px;
+                
+}
+
+video {
+    object-fit: cover; 
+    width: 100%;
+    height: 710px;
+    z-index: -100;
+} 
+
+/* logo-mainmenu-rightmenu */
+.logo-mainmenu-rightmenu {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 100%;
+    background-color: #483838;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.logo-menu-flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+/* logo */
+.logo {
+    margin-top: 23px;
+}
+
+/* main-menu */
+.main-menu {
+    
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb li {
+    padding: 36px 10px;
+}
+.gnb li > a {
+    font-size: 18px;
+    color: white;
+    border-right: 2px solid white;
+    padding-right: 10px;
+}
+
+.gnb li:first-child > a {
+   
+
+.gnb li:last-child > a {
+ 
+}
+
+.gnb li > a:hover {
+    color: #d2d79f;
+}
+
+
+/* ==================== main ==================== */
+
+
+/* ==================== footer ==================== */
+
+
