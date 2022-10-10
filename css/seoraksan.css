@@ -11,6 +11,8 @@
     /* background-color: darkgray; */
 }
 
+
+
 .wrapper {
     width: 100%;
 }
@@ -20,70 +22,415 @@ header {
     position: relative;
     width: 100%;
     height: 710px;
-                
+
 }
 
 video {
-    object-fit: cover; 
+    object-fit: cover;
     width: 100%;
     height: 710px;
     z-index: -100;
-} 
+}
 
-/* logo-mainmenu-rightmenu */
-.logo-mainmenu-rightmenu {
+/* text-logo-mainmenu-rightmenu */
+.text-logo-menu {
     position: absolute;
     left: 0;
-    top: 0; 
+    top: 0;
     width: 100%;
     background-color: #483838;
-    opacity: 0.8;
+    background-color: rgba(72, 56, 56, 0.8);
     z-index: 100;
+}
+
+.text-logo-menu .mttext {
+    position: absolute;
+    top: 355px;
+    color: white;
+}
+
+.text-logo-menu .mttext strong {
+    font-size: 36px;
+    line-height: 53px;
 }
 
 .logo-menu-flexbox {
     display: flex;
     justify-content: space-between;
 }
+
 /* logo */
 .logo {
     margin-top: 23px;
+    padding-left: 0;
 }
 
 /* main-menu */
-.main-menu {
-    
-}
+.main-menu {}
 
 .gnb {
     display: flex;
 }
 
 .gnb li {
-    padding: 36px 10px;
+    padding: 36px 5px;
 }
-.gnb li > a {
+
+.gnb li>a {
     font-size: 18px;
     color: white;
     border-right: 2px solid white;
     padding-right: 10px;
 }
 
-.gnb li:first-child > a {
-   
-
-.gnb li:last-child > a {
- 
+.gnb li:last-child>a {
+    border-right: 0;
 }
 
-.gnb li > a:hover {
+.gnb li>a:hover {
     color: #d2d79f;
 }
 
+/* right-menu */
+.right-menu ul {
+    display: flex;
+}
+
+.right-menu li {
+    padding: 36px 10px;
+}
+
+.right-menu li:first-child {
+    padding-left: 0;
+}
+
+.right-menu li:last-child {
+    padding-right: 0;
+}
+
+.right-menu li:first-child select {
+    border: 0;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+#language:hover {
+    color: black;
+}
+
+.right-menu li:nth-child(2) a {
+    color: white;
+    font-size: 16px;
+}
+
+.right-menu li:nth-child(2) a:hover {
+    color: #000;
+}
+
+.right-menu li:last-child a:hover {
+    background-color: #000;
+}
+
+/* bottom-text-menu */
+.bottom-text-menu {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 134px;
+    padding-top: 55px;
+}
+
+.bottom-text-menu .text-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-text-menu .text-menu .text-button {
+    width: 314px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-text-menu .text-menu .text-button p {
+    font-size: 24px;
+    color: white;
+}
+
+.text-button .video-button input {
+    padding-left: 10px;
+}
+
+.right-info {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-info li>a {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.right-info li>a:hover {
+    color: #d2d79f;
+}
 
 /* ==================== main ==================== */
 
 
+h2 {
+    font-size: 0;
+}
+
+/* section .mt-climbing */
+.mt-climbing {
+    position: relative;
+    width: 100%;
+    height: 730px;
+}
+
+.mt-climbing .backColor {
+    position: absolute;
+    top: 410px;
+    width: 100%;
+    height: 322px;
+    background-color: #90b77d;
+}
+
+.trip-info {
+    margin-top: 74px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.trip-map {
+    width: 258px;
+    height: 312px;
+    padding-top: 50px;
+    border: 1px solid #42855b;
+    border-radius: 10px;
+
+}
+
+.trip-map p {
+    padding-left: 30px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.trip-map .link-button {
+    margin-left: 82px;
+    margin-bottom: 14px;
+    /* 확인 */
+}
+
+.trip-map .link-button>a {
+    width: 94px;
+    height: 34px;
+    border-radius: 10px;
+    line-height: 34px;
+    background-color: #42855b;
+    text-align: center;
+    color: white;
+}
+
+.trip-map .link-button>a:hover {
+    color: #d2d79f;
+}
+
+.tripnews-img {
+    width: 990px;
+    height: 430px;
+    display: flex;
+}
+
+.tripnews-img .tripnews {
+    position: relative;
+    margin-top: 40px;
+    border: 1px solid #42855b;
+}
+
+.tripnews-img .tripnews p {
+    position: absolute;
+    left: 290px;
+    bottom: 40px;
+}
+
+.tripnews-img .tripnews p>a {
+    font-size: 24px;
+    color: white;
+}
+
+.tripnews-img .tripnews p>a:hover {
+    color: #d2d79f;
+}
+
+.climbing-img {
+    height: 395px;
+    border: 1px solid #42855b;
+}
+
+.reservation-menu {
+    margin-top: 73px;
+    margin-left: 320px;
+    width: 760px;
+    text-align: center;
+}
+
+.reservation-menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation-menu ul a>p {
+    font-size: 14px;
+    color: white;
+}
+
+.reservation-menu ul a:hover>p {
+    color: #000;
+}
+
+/* section .program-info */
+
+.program-info {
+    width: 100%;
+    height: 1327px;
+    background-image: url(../images/설악산배경이미지.png);
+    ;
+}
+
+.program-info h3 {
+    font-size: 30px;
+    margin-top: 92px;
+    text-align: center;
+    color: #483838;
+}
+
+/* pro-list */
+
+.pro-list {
+    margin-top: 65px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro-list img {
+    height: 398px;
+}
+
+.pro-list .pro1,
+.pro-list .pro2,
+.pro-list .pro3,
+.pro-list .pro4 {
+    position: relative;
+    border: 1px solid #42855b;
+}
+
+.pro-list .pro1 .pro-text,
+.pro-list .pro2 .pro-text,
+.pro-list .pro3 .pro-text,
+.pro-list .pro4 .pro-text {
+    position: absolute;
+    left: 28px;
+    top: 68px;
+}
+
+.pro-text h4 {
+    font-size: 24px;
+    color: white;
+    line-height: 36px;
+    letter-spacing: -2px;
+}
+
+.pro-list .pro1 .pro-link,
+.pro-list .pro2 .pro-link,
+.pro-list .pro3 .pro-link,
+.pro-list .pro4 .pro-link {
+    position: absolute;
+    bottom: 27px;
+    width: 100%;
+    height: 72px;
+
+}
+
+.pro-list .pro1 .pro-link p>a,
+.pro-list .pro2 .pro-link p>a,
+.pro-list .pro3 .pro-link p>a,
+.pro-list .pro4 .pro-link p>a {
+    text-align: center;
+    line-height: 72px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.pro-list .pro1 .pro-link p>a:hover,
+.pro-list .pro2 .pro-link p>a:hover,
+.pro-list .pro3 .pro-link p>a:hover,
+.pro-list .pro4 .pro-link p>a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* wildlife */
+
+.wildlife {
+    position: relative;
+
+}
+
+.wildlife h4 {
+    position: absolute;
+    right: 0;
+    top: 53px;
+    font-size: 24px;
+    color: #483838;
+}
+
+.circle {
+    position: absolute;
+    right: 0;
+    top: 76px;
+    margin-top: 23px;
+    width: 400px;
+    height: 193px;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle .circle1-img {
+    position: relative;
+}
+
+.circle .circle1-img a>p {
+    position: absolute;
+    top: 88px;
+    left: 61px;
+    font-size: 18px;
+    color: transparent;
+}
+
+.circle .circle1-img a:hover>img {
+    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.circle .circle1-img a:hover>p {
+    opacity: 1;
+    font-weight: 600;
+    color: #483838;
+}
+
+
+
+
+
 /* ==================== footer ==================== */
-
-

@@ -24,8 +24,12 @@
             <video id="videoplay" muted poster="images/헤더이미지(영상일부).png">
                 <source src="https://tv.knps.or.kr/media/90/M20170207163733.mp4" type="video/mp4">
             </video>
-            <div class="logo-mainmenu-rightmenu">
+
+            <div class="text-logo-menu">
                 <div class="container">
+                    <div class="mttext">
+                        <strong>우리는 자연을 보존하여<br> 건강하고 행복한 미래를 열어갑니다.</strong>
+                    </div>
                     <div class="logo-menu-flexbox">
                         <!--메뉴바-->
                         <div class="logo">
@@ -59,52 +63,48 @@
                             </ul>
                         </div>
                     </div><!-- logo-menu-flexbox -->
+
                 </div><!-- container -->
-            </div><!-- logo-mainmenu-rightmenu -->
-
-            <div class="header-text">
-                <div class="container">
-                    <strong>우리는 자연을 보존하여<br> 건강하고 행복한 미래를 열어갑니다.</strong>
-                </div> <!-- container -->
-            </div> <!-- header-text -->
-
+            </div><!-- text-logo-menu -->
             <div class="bottom-text-menu">
                 <div class="container">
-                    <div class="text-button">
-                        <p><img src="./images/설악산 아이콘.png">설악산국립공원</p>
-                        <div class="video-button">
-                            <input type="image" onclick="video_stop()" src="./images/헤더영상정지아이콘.png" />
-                            <input type="image" onclick="video_start()" src="./images/헤더영상재생아이콘.png" />
-                        </div>
-                    </div> <!-- text-button -->
-                    <div class="bottom-rightmenu">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/날씨 아이콘.png" alt="날씨">
-                                    <p>날씨정보</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/안내도 아이콘.png" alt="안내도">
-                                    <p>안내도</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/탐방등급지도 아이콘.png" alt="탐방등급지도">
-                                    <p>탐방등급지도</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/홍보책자.png" alt="홍보책자">
-                                    <p>홍보책자</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> <!-- bottom-rightmenu -->
+                    <div class="text-menu">
+                        <div class="text-button">
+                            <p><img src="./images/설악산 아이콘.png">설악산국립공원</p>
+                            <div class="video-button">
+                                <input type="image" onclick="video_stop()" src="./images/헤더영상정지아이콘.png" />
+                                <input type="image" onclick="video_start()" src="./images/헤더영상재생아이콘.png" />
+                            </div>
+                        </div> <!-- text-button -->
+                        <div class="bottom-rightmenu">
+                            <ul class="right-info">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/날씨 아이콘.png" alt="날씨">
+                                        <p>날씨정보</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/안내도 아이콘.png" alt="안내도">
+                                        <p>안내도</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/탐방등급지도 아이콘.png" alt="탐방등급지도">
+                                        <p>탐방등급지도</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/홍보책자.png" alt="홍보책자">
+                                        <p>홍보책자</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- bottom-rightmenu -->
+                    </div><!-- text-menu -->
                 </div> <!-- container -->
             </div> <!-- bottom-text-menu -->
         </header>
@@ -116,20 +116,22 @@
                 </div>
                 <h2>mt-climbing</h2>
                 <div class="container">
-                    <div class="trip-map">
-                        <p>다양한 탐방코스를<br>확인해보세요</p>
-                        <img src="./images/난이도이미지.png" alt="탐방난이도">
-                        <div class="link-button"><a href="#">바로가기</a></div>
-                    </div>
-                    <article class="tripnews-img">
-                        <div class="tripnews">
-                            <img src="./images/탐방소식이미지.png" alt="탐방소식">
-                            <p><a href="#">탐방소식</a></p>
+                    <div class="trip-info">
+                        <div class="trip-map">
+                            <p>다양한 탐방코스를<br>확인해보세요</p>
+                            <img src="./images/난이도이미지.png" alt="탐방난이도">
+                            <div class="link-button"><a href="#">바로가기</a></div>
                         </div>
-                        <div class="climbing-img">
-                            <img src="./images/암장이미지.png">
-                        </div>
-                    </article> <!-- tripnews-img -->
+                        <article class="tripnews-img">
+                            <div class="tripnews">
+                                <img src="./images/탐방소식이미지.png" alt="탐방소식">
+                                <p><a href="#">탐방소식</a></p>
+                            </div>
+                            <div class="climbing-img">
+                                <img src="./images/암장이미지.png">
+                            </div>
+                        </article> <!-- tripnews-img -->
+                    </div> <!-- trip-info -->
                     <div class="reservation-menu">
                         <ul>
                             <li>
@@ -162,6 +164,7 @@
             </section> <!-- mt-climbing -->
 
             <section class="program-info">
+                <h2>program-info</h2>
                 <!-- <div class="back-img">
                     <img src="./images/설악산배경이미지.png" alt="설악산">
                 </div>-->
@@ -174,7 +177,7 @@
                                 <h4 class="pro-title">백담계곡<br>맑은물 따라 생태여행</h4>
                             </div>
                             <div class="pro-link">
-                                <p>예약하기</p>
+                                <p><a href="#">예약하기</a></p>
                             </div>
                         </div> <!-- pro1 -->
                         <div class="pro2">
@@ -183,7 +186,7 @@
                                 <h4 class="pro-title">비룡폭포<br>오솔길 따라 숲 속 탐험</h4>
                             </div>
                             <div class="pro-link">
-                                <p>예약하기</p>
+                                <p><a href="#">예약하기</a></p>
                             </div>
                         </div> <!-- pro2 -->
                         <div class="pro3">
@@ -192,27 +195,32 @@
                                 <h4 class="pro-title">오색약수터<br>주전골 굽이굽이 생태이야기</h4>
                             </div>
                             <div class="pro-link">
-                                <p>예약하기</p>
+                                <p><a href="#">예약하기</a></p>
                             </div>
                         </div> <!-- pro3 -->
                         <div class="pro4">
                             <img src="./images/설악산생태탐방원 이미지.png" alt="설악산생태탐방원">
                             <div class="pro-text">
-                                <h4 class="pro-title">설악산생태탐방원<br>건강나누리캠프</h4>
+                                <h4 class="pro-title">설악산생태탐방원<br>건강 나누리 캠프</h4>
                             </div>
                             <div class="pro-link">
-                                <p>예약하기</p>
+                                <p><a href="#">예약하기</a></p>
                             </div>
                         </div> <!-- pro4 -->
                     </div> <!-- pro-list -->
 
                     <div class="wildlife">
                         <h4>깃대종</h4>
-                        <div class="circle1-img">
-                            <img src="./images/눈잣나무.png" alt="눈잣나무">
-                        </div>
-                        <div class="circle2-img">
-                            <img src="./images/산양.png" alt="산양">
+                        <div class="circle">
+                            <div class="circle1-img">
+                                <a href="#">
+                                    <p>눈잣나무</p>
+                                    <img src="./images/눈잣나무.png" alt="눈잣나무">
+                                </a>
+                            </div>
+                            <div class="circle2-img">
+                                <a href="#"><img src="./images/산양.png" alt="산양"></a>
+                            </div>
                         </div>
                     </div> <!-- wildlife -->
                     <div class="display-info">
