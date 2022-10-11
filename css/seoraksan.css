@@ -19,18 +19,19 @@
 
 /* ==================== header ==================== */
 header {
+    background-image: url(../images/설악산가을\ 헤더.png);
     position: relative;
     width: 100%;
     height: 710px;
 
 }
 
-video {
+/* video {
     object-fit: cover;
     width: 100%;
     height: 710px;
     z-index: -100;
-}
+} */
 
 /* text-logo-mainmenu-rightmenu */
 .text-logo-menu {
@@ -139,11 +140,13 @@ video {
     width: 100%;
     height: 134px;
     padding-top: 55px;
+
 }
 
 .bottom-text-menu .text-menu {
     display: flex;
     justify-content: space-between;
+    background-color: aqua;
 }
 
 .bottom-text-menu .text-menu .text-button {
@@ -165,6 +168,7 @@ video {
     width: 380px;
     display: flex;
     justify-content: space-between;
+    background-color: aqua;
 }
 
 .right-info li>a {
@@ -302,6 +306,7 @@ h2 {
     height: 1327px;
     background-image: url(../images/설악산배경이미지.png);
     ;
+    z-index: -1;
 }
 
 .program-info h3 {
@@ -424,7 +429,7 @@ h2 {
 .circle .circle1-img a:hover>img,
 .circle .circle2-img a:hover>img {
     opacity: 0.4;
-    z-index: -100;
+
 }
 
 .circle .circle1-img a:hover>p,
@@ -432,45 +437,160 @@ h2 {
     text-align: center;
     font-weight: 600;
     color: white;
-    z-index: 100;
+    z-index: 1;
 }
 
+/*사진전-알림판*/
 .display-info {
-    margin-top: 228px;
-    width: 100%;
-    height: 500px;
+    margin-top: 227px;
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
 }
 
 .display-info .ph-display {
+    position: relative;
     padding: 0;
     width: 680px;
     height: 500px;
+
 }
 
-.display-info .ph-display > h4 {
+.display-info .ph-display>h4 {
     padding: 5px 0;
     font-size: 24px;
     color: #483838;
 }
 
-.display-info .ph-display .display-img {
+.display-info .ph-display .display-img>img {
     width: 682px;
     height: 458px;
-    border: 2px solid #483838; 
-    visibility: collapse;
-    
+    border: 2px solid #483838;
+
 }
 
 
+.display-info .ph-display .display-text a {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 103px;
+    background-color: transparent;
+    line-height: 103px;
+    text-align: center;
+    font-size: 18px;
+    color: transparent;
+}
 
+.display-info .ph-display a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
 
+.display-info .infoBox {
+    margin-top: 161px;
+    width: 600px;
+    height: 340px;
+    border: 2px solid #483838;
+}
 
+.display-info .infoBox h3 {
+    margin: 40px;
+    font-size: 26px;
+}
 
+.display-info .infoBox .info {
+    margin-left: 40px;
+}
 
+.display-info .infoBox .info li {
+    line-height: 40px;
+    text-align: left;
+    list-style: disc;
+}
 
+.display-info .infoBox .info li>a {
+    font-size: 18px;
+    color: #483838;
+}
 
+.display-info .infoBox .info li>a:hover {
+    text-decoration: underline;
+}
+
+/* section.main-media */
+
+.main-media {
+    width: 100%;
+    height: 804px;
+    background-color: #90b77d;
+}
+
+.photo-video {
+    height: 804px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.photo-video .photo {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 35px;
+    width: 440px;
+    height: 748px;
+    background-color: #42855b;
+}
+
+.photo-video .photo .photo1,
+.photo-video .photo .photo2,
+.photo-video .photo .photo3 {
+    position: relative;
+    width: 362px;
+    height: 230px;
+
+}
+
+.photo-video .photo .photo1>a,
+.photo-video .photo .photo2>a,
+.photo-video .photo .photo3>a {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.photo-video .video {
+    margin-top: 177px;
+    padding-top: 52px;
+    padding-left: 52px;
+    width: 880px;
+    height: 536px;
+    background-color: #42855b;
+}
+
+.photo-video .video .videobox {
+    position: relative;
+    width: 758px;
+    height: 378px;
+}
+
+.photo-video .video .videobox>video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-video .video .videobox>input {
+    /* background-color: #000; */
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 100;
+    opacity: 0;
+}
+
+.photo-video .video .videobox>input:hover {
+    opacity: 1;
+}
 
 /* ==================== footer ==================== */
