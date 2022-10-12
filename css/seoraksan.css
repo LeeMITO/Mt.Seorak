@@ -11,13 +11,17 @@
     /* background-color: darkgray; */
 }
 
-
+h2 {
+    font-size: 0;
+}
 
 .wrapper {
     width: 100%;
 }
 
 /* ==================== header ==================== */
+
+
 header {
     background-image: url(../images/설악산가을\ 헤더.png);
     position: relative;
@@ -26,12 +30,12 @@ header {
 
 }
 
-/* video {
+video {
     object-fit: cover;
     width: 100%;
     height: 710px;
     z-index: -100;
-} */
+} 
 
 /* text-logo-mainmenu-rightmenu */
 .text-logo-menu {
@@ -67,7 +71,7 @@ header {
 }
 
 /* main-menu */
-.main-menu {}
+
 
 .gnb {
     display: flex;
@@ -140,13 +144,12 @@ header {
     width: 100%;
     height: 134px;
     padding-top: 55px;
-
+    z-index: 1;
 }
 
 .bottom-text-menu .text-menu {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
 }
 
 .bottom-text-menu .text-menu .text-button {
@@ -168,7 +171,6 @@ header {
     width: 380px;
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
 }
 
 .right-info li>a {
@@ -184,9 +186,6 @@ header {
 /* ==================== main ==================== */
 
 
-h2 {
-    font-size: 0;
-}
 
 /* section .mt-climbing */
 .mt-climbing {
@@ -274,10 +273,17 @@ h2 {
 }
 
 .climbing-img {
+    width: 348px;
     height: 395px;
     border: 1px solid #42855b;
+    background-image: url(../images/암장이미지.png);
+}
+.climbing-img:hover {
+    background-image: url(../images/빙벽이미지.png);
 }
 
+
+/* 예약 메뉴 */
 .reservation-menu {
     margin-top: 73px;
     margin-left: 320px;
@@ -464,7 +470,7 @@ h2 {
 .display-info .ph-display .display-img>img {
     width: 682px;
     height: 458px;
-    border: 2px solid #483838;
+    border: 1px solid #483838;
 
 }
 
@@ -490,7 +496,7 @@ h2 {
     margin-top: 161px;
     width: 600px;
     height: 340px;
-    border: 2px solid #483838;
+    border: 1px solid #483838;
 }
 
 .display-info .infoBox h3 {
@@ -529,7 +535,6 @@ h2 {
     height: 804px;
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
 }
 
 .photo-video .photo {
@@ -539,6 +544,7 @@ h2 {
     width: 440px;
     height: 748px;
     background-color: #42855b;
+    box-shadow: 5px 5px 10px;
 }
 
 .photo-video .photo .photo1,
@@ -559,12 +565,14 @@ h2 {
 }
 
 .photo-video .video {
+    position: relative;
     margin-top: 177px;
     padding-top: 52px;
-    padding-left: 52px;
+    padding-left: 57px;
     width: 880px;
     height: 536px;
     background-color: #42855b;
+    box-shadow: 5px 5px 10px;
 }
 
 .photo-video .video .videobox {
@@ -593,4 +601,105 @@ h2 {
     opacity: 1;
 }
 
+
+.text-ctrl {
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+}
+.text-ctrl .bt-start {
+    padding-right: 20px;
+}
+
 /* ==================== footer ==================== */
+
+footer {
+    background-image: url(../images/푸터배경이미지.png);
+    
+}
+
+.footerbox {
+    background-color: rgba(72, 56, 56, 0.8);
+}
+.sns-logo-text {
+    position: relative;
+}
+/* sns */
+.sns-logo-text .sns {
+    width: 230px;
+    text-align: center;
+    position: absolute;
+    right: 5px;
+    top: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sns-logo-text .sns  a {
+    position: relative;
+    width: 42px; height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    background-color: #d2d79f;
+}
+
+.sns-logo-text .sns  a > img {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* footer-logo */
+
+.logo-text {
+    display: flex;
+    padding-top: 54px;
+    width: 890px;
+    height: 176px;
+}
+
+.logo-text .footer-logo {
+    margin-top: 14px;
+}
+
+.logo-text .address-copyright {
+    margin: 0 5px;
+}
+
+.logo-text .address-copyright > address {
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: -0.5px; 
+    line-height: 25px;
+    color: #d2d79f;
+}
+
+.logo-text .address-copyright > p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #d2d79f;
+}
+
+/* fixed-menu */
+
+.fixed-menu {
+    position: fixed;
+    right: 84px;
+    bottom: 30px;
+}
+
+.fixed-menu > a {
+    width: 100px; 
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #42855b;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+.fixed-menu > a > span {
+    color: #42855b;
+}
