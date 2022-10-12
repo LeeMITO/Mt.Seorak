@@ -35,7 +35,7 @@ video {
     width: 100%;
     height: 710px;
     z-index: -100;
-} 
+}
 
 /* text-logo-mainmenu-rightmenu */
 .text-logo-menu {
@@ -215,7 +215,7 @@ video {
     height: 312px;
     padding-top: 50px;
     border: 1px solid #42855b;
-    border-radius: 10px;
+    border-radius: 20px;
 
 }
 
@@ -234,7 +234,7 @@ video {
 .trip-map .link-button>a {
     width: 94px;
     height: 34px;
-    border-radius: 10px;
+    border-radius: 20px;
     line-height: 34px;
     background-color: #42855b;
     text-align: center;
@@ -254,21 +254,28 @@ video {
 .tripnews-img .tripnews {
     position: relative;
     margin-top: 40px;
-    border: 1px solid #42855b;
+    border: 2px solid #42855b;
 }
 
 .tripnews-img .tripnews p {
     position: absolute;
-    left: 290px;
+    left: 0px;
     bottom: 40px;
+    width: 100%;
+    height: 72px;
 }
 
 .tripnews-img .tripnews p>a {
+    text-align: center;
+    /* padding-left: 290px; */
+    line-height: 72px;
     font-size: 24px;
     color: white;
 }
 
 .tripnews-img .tripnews p>a:hover {
+    
+    background-color: rgba(0, 0, 0, 0.5);
     color: #d2d79f;
 }
 
@@ -277,7 +284,9 @@ video {
     height: 395px;
     border: 1px solid #42855b;
     background-image: url(../images/암장이미지.png);
+    box-shadow: 2px 2px 5px #42855b;
 }
+
 .climbing-img:hover {
     background-image: url(../images/빙벽이미지.png);
 }
@@ -607,6 +616,7 @@ video {
     right: 80px;
     bottom: 15px;
 }
+
 .text-ctrl .bt-start {
     padding-right: 20px;
 }
@@ -615,15 +625,17 @@ video {
 
 footer {
     background-image: url(../images/푸터배경이미지.png);
-    
+
 }
 
 .footerbox {
     background-color: rgba(72, 56, 56, 0.8);
 }
+
 .sns-logo-text {
     position: relative;
 }
+
 /* sns */
 .sns-logo-text .sns {
     width: 230px;
@@ -633,18 +645,19 @@ footer {
     top: 25px;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.sns-logo-text .sns  a {
+.sns-logo-text .sns a {
     position: relative;
-    width: 42px; height: 42px;
+    width: 42px;
+    height: 42px;
     line-height: 42px;
     border-radius: 50%;
     background-color: #d2d79f;
 }
 
-.sns-logo-text .sns  a > img {
+.sns-logo-text .sns a>img {
     position: absolute;
     left: 50%;
     bottom: 50%;
@@ -668,15 +681,15 @@ footer {
     margin: 0 5px;
 }
 
-.logo-text .address-copyright > address {
+.logo-text .address-copyright>address {
     font-size: 16px;
     font-style: normal;
-    letter-spacing: -0.5px; 
+    letter-spacing: -0.5px;
     line-height: 25px;
     color: #d2d79f;
 }
 
-.logo-text .address-copyright > p {
+.logo-text .address-copyright>p {
     font-size: 16px;
     line-height: 25px;
     color: #d2d79f;
@@ -690,8 +703,8 @@ footer {
     bottom: 30px;
 }
 
-.fixed-menu > a {
-    width: 100px; 
+.fixed-menu>a {
+    width: 100px;
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -700,6 +713,7 @@ footer {
     border-radius: 10px;
     letter-spacing: 2px;
 }
-.fixed-menu > a > span {
+
+.fixed-menu>a>span {
     color: #42855b;
 }
