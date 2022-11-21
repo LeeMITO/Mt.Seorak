@@ -682,17 +682,17 @@ footer {
 }
 
 .logo-text .address-copyright>address {
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
-    letter-spacing: -0.5px;
+    /* letter-spacing: -0.5px; */
     line-height: 25px;
-    color: #d2d79f;
+    color: #fff;
 }
 
 .logo-text .address-copyright>p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
-    color: #d2d79f;
+    color: #fff;
 }
 
 /* fixed-menu */
