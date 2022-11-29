@@ -48,16 +48,18 @@ video {
     z-index: 100;
 }
 
+
 .text-logo-menu .mttext {
     position: absolute;
     top: 355px;
     color: white;
+    opacity: 1;
 }
 
 .text-logo-menu .mttext strong {
     font-size: 36px;
     line-height: 53px;
-}
+} 
 
 .logo-menu-flexbox {
     display: flex;
@@ -92,9 +94,37 @@ video {
     border-right: 0;
 }
 
-.gnb li>a:hover {
+.gnb li a:hover {
     color: #d2d79f;
+    
 }
+
+.lnb {
+    display: none;
+    background-color: rgba(72,56,56, 0.5);
+    position: absolute;
+    top: 97px;
+    width:150px;
+    padding: 10px;
+}
+
+.lnb li {
+    height: 50px;
+    padding-top: 15px;
+}
+.lnb>li>a{
+    /* background-color: #000; */
+    justify-content: space-between;
+    font-size: 16px;
+    border-right: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.gnb li:hover .lnb {
+    display: block;
+}
+
 
 /* right-menu */
 .right-menu ul {
@@ -133,10 +163,6 @@ video {
     color: #000;
 }
 
-.right-menu li:last-child a:hover {
-    background-color: #000;
-}
-
 /* bottom-text-menu */
 .bottom-text-menu {
     position: absolute;
@@ -145,6 +171,10 @@ video {
     height: 134px;
     padding-top: 55px;
     z-index: 1;
+    opacity: 0.3;
+}
+.bottom-text-menu:hover {
+    opacity: 1;
 }
 
 .bottom-text-menu .text-menu {
@@ -192,6 +222,7 @@ video {
     position: relative;
     width: 100%;
     height: 730px;
+    
 }
 
 .mt-climbing .backColor {
@@ -200,6 +231,7 @@ video {
     width: 100%;
     height: 322px;
     background-color: #90b77d;
+    
 }
 
 .trip-info {
@@ -216,7 +248,7 @@ video {
     padding-top: 50px;
     border: 1px solid #42855b;
     border-radius: 20px;
-
+    box-shadow: 5px 5px 20px -10px;
 }
 
 .trip-map p {
@@ -254,7 +286,8 @@ video {
 .tripnews-img .tripnews {
     position: relative;
     margin-top: 40px;
-    border: 2px solid #42855b;
+    border: 1px solid #42855b;
+    box-shadow: 5px 5px 10px;
 }
 
 .tripnews-img .tripnews p {
@@ -284,7 +317,7 @@ video {
     height: 395px;
     border: 1px solid #42855b;
     background-image: url(../images/암장이미지.png);
-    box-shadow: 2px 2px 5px #42855b;
+    box-shadow: 5px 5px 20px -10px;
 }
 
 .climbing-img:hover {
@@ -351,6 +384,7 @@ video {
 .pro-list .pro4 {
     position: relative;
     border: 1px solid #42855b;
+    box-shadow: 5px 5px 20px -10px;
 }
 
 .pro-list .pro1 .pro-text,
@@ -366,7 +400,7 @@ video {
     font-size: 24px;
     color: white;
     line-height: 36px;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 }
 
 .pro-list .pro1 .pro-link,
@@ -467,7 +501,6 @@ video {
     padding: 0;
     width: 680px;
     height: 500px;
-
 }
 
 .display-info .ph-display>h4 {
@@ -480,7 +513,7 @@ video {
     width: 682px;
     height: 458px;
     border: 1px solid #483838;
-
+    
 }
 
 
@@ -506,6 +539,7 @@ video {
     width: 600px;
     height: 340px;
     border: 1px solid #483838;
+    box-shadow: 5px 5px 20px -10px;
 }
 
 .display-info .infoBox h3 {
@@ -678,7 +712,8 @@ footer {
 }
 
 .logo-text .address-copyright {
-    margin: 0 5px;
+    margin: 0 30px;
+    opacity: 0.8;
 }
 
 .logo-text .address-copyright>address {
@@ -708,7 +743,7 @@ footer {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    color: #fff;
+    color: #42855b;
     border: 1px solid #42855b;
     border-radius: 10px;
     letter-spacing: 2px;
